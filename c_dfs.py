@@ -35,6 +35,7 @@ while len(search_space) > 0:
         print(current.value)
 
         # add the left and right to the search space (FILO)
-        search_space = None # TODO
+        search_space.insert(0, current.right)
+        search_space.insert(0, current.left)
     # end if
 # end loop
